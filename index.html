@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="오늘의 아재개그 - 매일 새로운 아재개그로 하루를 즐겁게! 문제만 공유하거나 정답까지 공유할 수 있어요. 100개의 엄선된 아재개그 모음"
+    />
+    <meta
+      name="keywords"
+      content="아재개그, 개그, 유머, 재미, 오늘의 개그, 아재개그 모음, 웃긴 개그, 아재 유머, 개그 모음, 재미있는 개그"
+    />
+    <meta name="author" content="AshLight" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="오늘의 아재개그" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://joke.ashlight.store/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://joke.ashlight.store/" />
+    <meta property="og:title" content="오늘의 아재개그 😁 - 매일 새로운 아재개그" />
+    <meta
+      property="og:description"
+      content="매일 새로운 아재개그로 하루를 즐겁게! 문제만 공유하거나 정답까지 공유할 수 있어요. 100개의 엄선된 아재개그 모음"
+    />
+    <meta
+      property="og:image"
+      content="https://joke.ashlight.store/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="오늘의 아재개그" />
+    <meta property="og:site_name" content="오늘의 아재개그" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://joke.ashlight.store/" />
+    <meta name="twitter:title" content="오늘의 아재개그 😁" />
+    <meta
+      name="twitter:description"
+      content="매일 새로운 아재개그로 하루를 즐겁게! 문제만 공유하거나 정답까지 공유할 수 있어요"
+    />
+    <meta
+      name="twitter:image"
+      content="https://joke.ashlight.store/og-image.png"
+    />
+    <meta name="twitter:image:alt" content="오늘의 아재개그" />
+
+    <title>오늘의 아재개그 😁 - 매일 새로운 아재개그로 하루를 즐겁게!</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JSON-LD 구조화된 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "오늘의 아재개그",
+      "url": "https://joke.ashlight.store/",
+      "description": "매일 새로운 아재개그로 하루를 즐겁게! 문제만 공유하거나 정답까지 공유할 수 있어요",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AshLight",
+        "email": "ashlight2510@gmail.com"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://joke.ashlight.store/",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">오늘의 아재개그 😁</h1>
+        <div class="date-info">
+          <span id="date-display">--</span>
+        </div>
+      </header>
+
+      <main>
+        <!-- 문제 카드 -->
+        <div class="joke-card question-card">
+          <div class="card-label">Q.</div>
+          <div class="joke-question" id="joke-question">로딩 중...</div>
+        </div>
+
+        <!-- 정답 보기 버튼 -->
+        <div class="answer-section" id="answer-section">
+          <button id="show-answer-btn" class="show-answer-btn">
+            정답 보기 👀
+          </button>
+        </div>
+
+        <!-- 정답 카드 (숨김) -->
+        <div class="joke-card answer-card" id="answer-card" style="display: none">
+          <div class="card-label">A.</div>
+          <div class="joke-answer" id="joke-answer">--</div>
+        </div>
+
+        <!-- 공유 섹션 -->
+        <div class="share-section">
+          <button id="share-question-btn" class="share-btn">
+            문제만 공유 📤
+          </button>
+          <button id="share-with-answer-btn" class="share-btn secondary">
+            정답까지 공유 💬
+          </button>
+          <button id="share-image-btn" class="share-btn image-btn">
+            이미지로 공유 🖼️
+          </button>
+        </div>
+      </main>
+
+      <!-- 이미지 생성용 숨김 캔버스 -->
+      <canvas id="share-canvas" style="display: none"></canvas>
+
+      <ins
+        class="kakao_ad_area"
+        style="display: none"
+        data-ad-unit="DAN-tzbpyImi5HFN8s9m"
+        data-ad-width="250"
+        data-ad-height="250"
+      ></ins>
+      <script
+        type="text/javascript"
+        src="//t1.daumcdn.net/kas/static/ba.min.js"
+        async
+      ></script>
+
+      <footer>
+        <p>
+          © 2025
+          <a href="mailto:ashlight2510@gmail.com" class="footer-link"
+            >AshLight</a
+          >. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>아재개그를 불러오는 중...</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

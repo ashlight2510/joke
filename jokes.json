@@ -1,0 +1,603 @@
+[
+  {
+    "id": 1,
+    "question": "아기 공룡 둘리가 고등학교에 입학했대요. 어디 고등학교죠?",
+    "answer": "빙하타고",
+    "author": "admin"
+  },
+  {
+    "id": 2,
+    "question": "세상에서 가장 쎈 대학교 이름은?",
+    "answer": "와세다 대학",
+    "author": "admin"
+  },
+  {
+    "id": 3,
+    "question": "가장 지루하고 지겨운 중학교 이름은?",
+    "answer": "로딩중",
+    "author": "admin"
+  },
+  {
+    "id": 4,
+    "question": "해리포터는 어떤 사람을 말하는가요?",
+    "answer": "해를 취재하는 사람",
+    "author": "admin"
+  },
+  {
+    "id": 5,
+    "question": "우리 몸에 좋지 않은 청바지 이름은?",
+    "answer": "유해진",
+    "author": "admin"
+  },
+  {
+    "id": 6,
+    "question": "도둑놈이 가장 좋아하는 아이스크림은?",
+    "answer": "보석바",
+    "author": "admin"
+  },
+  {
+    "id": 7,
+    "question": "이 세상에서 가장 뜨거운 과일은?",
+    "answer": "천도복숭아",
+    "author": "admin"
+  },
+  {
+    "id": 8,
+    "question": "반성문을 영어로 표현하면?",
+    "answer": "글로벌",
+    "author": "admin"
+  },
+  {
+    "id": 9,
+    "question": "우리나라에서 가장 오래된 화장실은?",
+    "answer": "전봇대",
+    "author": "admin"
+  },
+  {
+    "id": 10,
+    "question": "아픈 사람들이 원하는 반지는 어떤 반지가 있죠?",
+    "answer": "힐링",
+    "author": "admin"
+  },
+  {
+    "id": 11,
+    "question": "몸매랑 얼굴은 예쁜데 속이 텅빈 여자는?",
+    "answer": "마네킹",
+    "author": "admin"
+  },
+  {
+    "id": 12,
+    "question": "서울에서 조금 뚱뚱한 사람들이 사는 동네는?",
+    "answer": "반포동",
+    "author": "admin"
+  },
+  {
+    "id": 13,
+    "question": "지구에서 기형아가 가장 많이 태어나는 나라 이름은?",
+    "answer": "네팔",
+    "author": "admin"
+  },
+  {
+    "id": 14,
+    "question": "아이스크림이 죽다는 네자로 줄여보세요",
+    "answer": "다이하드",
+    "author": "admin"
+  },
+  {
+    "id": 15,
+    "question": "김밥이 경찰서에 간 이유는 무엇인겨?",
+    "answer": "참기름이 고소해서",
+    "author": "admin"
+  },
+  {
+    "id": 16,
+    "question": "세상에서 가장 야한 채소는 무엇인겨?",
+    "answer": "버섯",
+    "author": "admin"
+  },
+  {
+    "id": 17,
+    "question": "김밥이 죽으면 어디로 가남요?",
+    "answer": "김밥천국",
+    "author": "admin"
+  },
+  {
+    "id": 18,
+    "question": "바나나가 웃으면?",
+    "answer": "바나나킥",
+    "author": "admin"
+  },
+  {
+    "id": 19,
+    "question": "아버지가 정말 강한 사람이다를 세자로 줄이면?",
+    "answer": "부가세",
+    "author": "admin"
+  },
+  {
+    "id": 20,
+    "question": "할아버지 할머니가 가장 좋아하는 폭포는 무엇이대요?",
+    "answer": "나이야가라",
+    "author": "admin"
+  },
+  {
+    "id": 21,
+    "question": "할아버지가 좋아하는 돈은?",
+    "answer": "할머니",
+    "author": "admin"
+  },
+  {
+    "id": 22,
+    "question": "조금 전에 울었다가 그쳤던 사람을 다섯자로 줄이면",
+    "answer": "아까운사람",
+    "author": "admin"
+  },
+  {
+    "id": 23,
+    "question": "한의사가 가장 좋아하는 말은?",
+    "answer": "인생은 한방이여",
+    "author": "admin"
+  },
+  {
+    "id": 24,
+    "question": "이 죽을 먹으면 자연스럽게 웃게 되죠. 무슨 죽이죠?",
+    "answer": "히죽",
+    "author": "admin"
+  },
+  {
+    "id": 25,
+    "question": "이 세상에서 가장 쉬운 숫자는",
+    "answer": "190000(쉽구만)",
+    "author": "admin"
+  },
+  {
+    "id": 26,
+    "question": "닿기만 해도 취하는 술이 있어요.",
+    "answer": "입술",
+    "author": "admin"
+  },
+  {
+    "id": 27,
+    "question": "아저씨들이 좋아하는 돈은?",
+    "answer": "아주머니",
+    "author": "admin"
+  },
+  {
+    "id": 28,
+    "question": "도둑놈이 훔치는 돈을 무엇이라고 말할까?",
+    "answer": "슬그머니",
+    "author": "admin"
+  },
+  {
+    "id": 29,
+    "question": "채소 장수가 가장 싫어하는 도시 이름은?",
+    "answer": "시드니",
+    "author": "admin"
+  },
+  {
+    "id": 30,
+    "question": "사람의 머리가 세 개 있다를 영어로 말하면?",
+    "answer": "헤드셋",
+    "author": "admin"
+  },
+  {
+    "id": 31,
+    "question": "인디언 추장보다 높은 사람은?",
+    "answer": "고추장",
+    "author": "admin"
+  },
+  {
+    "id": 32,
+    "question": "어부들이 이 가수를 싫어합니다. 누구죠?",
+    "answer": "배철수",
+    "author": "admin"
+  },
+  {
+    "id": 33,
+    "question": "남을 등처먹고 사는 사람은?",
+    "answer": "안마사",
+    "author": "admin"
+  },
+  {
+    "id": 34,
+    "question": "많은 개수의 모자가 뭉쳐 있는 것을 네자로 줄이면",
+    "answer": "밀짚모자",
+    "author": "admin"
+  },
+  {
+    "id": 35,
+    "question": "제일 억울한 도형은?",
+    "answer": "원통",
+    "author": "admin"
+  },
+  {
+    "id": 36,
+    "question": "모든 사람들을 일어나게 하는 숫자는?",
+    "answer": "5 (다~섯)",
+    "author": "admin"
+  },
+  {
+    "id": 37,
+    "question": "치과 의사들은 이 아파트에는 살지 않아요. 어디예요?",
+    "answer": "이편한세상",
+    "author": "admin"
+  },
+  {
+    "id": 38,
+    "question": "세계에서 가장 인기 있는 벌레 이름은?",
+    "answer": "스타벅스",
+    "author": "admin"
+  },
+  {
+    "id": 39,
+    "question": "지방 흡임의 반대말이 있다네요.",
+    "answer": "수도권배출",
+    "author": "admin"
+  },
+  {
+    "id": 40,
+    "question": "소금의 유통기간은 며칠일까요?",
+    "answer": "천일(염)",
+    "author": "admin"
+  },
+  {
+    "id": 41,
+    "question": "이 세상에서 가장 잔인한 비빔밥은?",
+    "answer": "산채비빔밥",
+    "author": "admin"
+  },
+  {
+    "id": 42,
+    "question": "고등학생이 가장 싫어하는 나무 이름은?",
+    "answer": "야자나무",
+    "author": "admin"
+  },
+  {
+    "id": 43,
+    "question": "비가 한시간 동안 내린다를 5자로 줄이면",
+    "answer": "추적육십분",
+    "author": "admin"
+  },
+  {
+    "id": 44,
+    "question": "승용차 문을 세게 닫으면 안되는 이유는?",
+    "answer": "문에 네개니까",
+    "author": "admin"
+  },
+  {
+    "id": 45,
+    "question": "미소의 반댓말을 무엇이라 하죠?",
+    "answer": "당기소",
+    "author": "admin"
+  },
+  {
+    "id": 46,
+    "question": "사람의 몸무게가 가장 많이 나갈때는 언제인가요?",
+    "answer": "철들때",
+    "author": "admin"
+  },
+  {
+    "id": 47,
+    "question": "자동차를 발로 차다를 네자로 말한다면?",
+    "answer": "카놀라유",
+    "author": "admin"
+  },
+  {
+    "id": 48,
+    "question": "소변과 대변 중에 어떤 것이 먼저 나오는지 아는 사람?",
+    "answer": "급한것",
+    "author": "admin"
+  },
+  {
+    "id": 49,
+    "question": "단무지가 버스를 타면서 하는 말은?",
+    "answer": "저 무임 승차요",
+    "author": "admin"
+  },
+  {
+    "id": 50,
+    "question": "전화를 가지고 건물을 세웠는데 그 건물의 이름은?",
+    "answer": "콜로세움",
+    "author": "admin"
+  },
+  {
+    "id": 51,
+    "question": "신데렐라가 잠을 못잔다를 네자로 줄이면",
+    "answer": "모짜렐라",
+    "author": "admin"
+  },
+  {
+    "id": 52,
+    "question": "신이 화를 내고 있다를 세자로 줄이면",
+    "answer": "신발끈",
+    "author": "admin"
+  },
+  {
+    "id": 53,
+    "question": "우리나라에서 땅값이 가장 싼 동네의 이름은?",
+    "answer": "일원동",
+    "author": "admin"
+  },
+  {
+    "id": 54,
+    "question": "술과 커피를 팔지 않습니다를 사자성어로 하면?",
+    "answer": "주차금지",
+    "author": "admin"
+  },
+  {
+    "id": 55,
+    "question": "연예인 송해교 송대관 송윤아 송중기의 공통점을 세자로 줄이면?",
+    "answer": "성동일",
+    "author": "admin"
+  },
+  {
+    "id": 56,
+    "question": "한국에서 가장 싸움을 잘하는 오리는?",
+    "answer": "을지문덕",
+    "author": "admin"
+  },
+  {
+    "id": 57,
+    "question": "딱 세사람 밖에 탈 수 없는 차 이름은?",
+    "answer": "인삼차",
+    "author": "admin"
+  },
+  {
+    "id": 58,
+    "question": "일본산 귤이 자신을 까먹으라고 하는 말은?",
+    "answer": "나까무라",
+    "author": "admin"
+  },
+  {
+    "id": 59,
+    "question": "드라마를 제작했는데 새우가 주인공이래요? 어떤 드라마죠?",
+    "answer": "대하드라마",
+    "author": "admin"
+  },
+  {
+    "id": 60,
+    "question": "호랑이가 새차를 타고 지나가는 여자에게 하는 말은?",
+    "answer": "타이거",
+    "author": "admin"
+  },
+  {
+    "id": 61,
+    "question": "못팔고도 돈을 잘 버는 사람은 누구인교?",
+    "answer": "철물점 아저씨",
+    "author": "admin"
+  },
+  {
+    "id": 62,
+    "question": "곰돌이 푸가 세 마리가 있으면?",
+    "answer": "삼푸",
+    "author": "admin"
+  },
+  {
+    "id": 63,
+    "question": "얼음이 죽다를 세자로 줄이면?",
+    "answer": "다이빙",
+    "author": "admin"
+  },
+  {
+    "id": 64,
+    "question": "왼쪽으로 절하는 것을 이렇게 표현하죠.",
+    "answer": "좌절",
+    "author": "admin"
+  },
+  {
+    "id": 65,
+    "question": "신발 한통에는 오천원 두통엔?",
+    "answer": "게보린",
+    "author": "admin"
+  },
+  {
+    "id": 66,
+    "question": "곰은 사고를 어떻게 먹을까요?",
+    "answer": "베어먹지롱",
+    "author": "admin"
+  },
+  {
+    "id": 67,
+    "question": "돌잔치를 하다를 영어로 말해보쇼",
+    "answer": "락페스티벌",
+    "author": "admin"
+  },
+  {
+    "id": 68,
+    "question": "세상에서 가장 뜨거운 바다는?",
+    "answer": "열받아",
+    "author": "admin"
+  },
+  {
+    "id": 69,
+    "question": "바람이 살랑살랑 가볍고 귀엽게 부는 동네는?",
+    "answer": "분당",
+    "author": "admin"
+  },
+  {
+    "id": 70,
+    "question": "손가락은 핑거라고 말하죠. 주먹은 뭐라고 말하죠?",
+    "answer": "오므린거",
+    "author": "admin"
+  },
+  {
+    "id": 71,
+    "question": "아주 오래전에 건설된 다리를 뭐라 부를까요?",
+    "answer": "구닥다리",
+    "author": "admin"
+  },
+  {
+    "id": 72,
+    "question": "침대를 밀고 돌리다를 네자로 줄이면?",
+    "answer": "배드민턴",
+    "author": "admin"
+  },
+  {
+    "id": 73,
+    "question": "우리나라 왕중에 성형한 왕이 있어요. 누구죠?",
+    "answer": "인조임금",
+    "author": "admin"
+  },
+  {
+    "id": 74,
+    "question": "세상에서 가장 돈을 많이 가지고 있는 새는?",
+    "answer": "백조",
+    "author": "admin"
+  },
+  {
+    "id": 75,
+    "question": "복은 크게 받아야 하는데 가장 작은 복은 뭐라할까요?",
+    "answer": "복분자",
+    "author": "admin"
+  },
+  {
+    "id": 76,
+    "question": "땅이 슬프다고 우는데 어떻게 우는지 아는교?",
+    "answer": "흙흙!!",
+    "author": "admin"
+  },
+  {
+    "id": 77,
+    "question": "베를린에서 밥을 먹으면 안되는 이유는?",
+    "answer": "독일수도",
+    "author": "admin"
+  },
+  {
+    "id": 78,
+    "question": "파 중에서 가장 인기 있는 파는?",
+    "answer": "파스타",
+    "author": "admin"
+  },
+  {
+    "id": 79,
+    "question": "빵이 시골에 가는 이유는 무얼까?",
+    "answer": "소보로",
+    "author": "admin"
+  },
+  {
+    "id": 80,
+    "question": "담배가 시골에 가는 이유는 무얼까?",
+    "answer": "말보로",
+    "author": "admin"
+  },
+  {
+    "id": 81,
+    "question": "미국에서 비가 온다를 영어로 말하면?",
+    "answer": "usb",
+    "author": "admin"
+  },
+  {
+    "id": 82,
+    "question": "과자가 자기 자신을 소개하면서 하는 말은?",
+    "answer": "저는 전과자입니다.",
+    "author": "admin"
+  },
+  {
+    "id": 83,
+    "question": "이 동물은 항상 미안한 마음으로 살아가고 있어요 어떤 동물?",
+    "answer": "오소리 (오,쏘~리)",
+    "author": "admin"
+  },
+  {
+    "id": 84,
+    "question": "이 세상에서 가장 뜨거운 전화는?",
+    "answer": "화상전화",
+    "author": "admin"
+  },
+  {
+    "id": 85,
+    "question": "우리나라에서 가장 바쁜 대학교 이름은?",
+    "answer": "부산대학교",
+    "author": "admin"
+  },
+  {
+    "id": 86,
+    "question": "호주의 화폐단위를 말하시오.",
+    "answer": "호주머니",
+    "author": "admin"
+  },
+  {
+    "id": 87,
+    "question": "하나님이 버스를 타고 내리다를 세자로 줄이면?",
+    "answer": "신내림",
+    "author": "admin"
+  },
+  {
+    "id": 88,
+    "question": "머리 아플 때 약을 얼마나 먹어야 할까?",
+    "answer": "두통",
+    "author": "admin"
+  },
+  {
+    "id": 89,
+    "question": "아마존에는 누가 살고 있을까요?",
+    "answer": "아마...존이",
+    "author": "admin"
+  },
+  {
+    "id": 90,
+    "question": "이 세상에서 가장 가난한 임금은?",
+    "answer": "최저임금",
+    "author": "admin"
+  },
+  {
+    "id": 91,
+    "question": "성적이 나와도 말하지 못하는 이유는 무엇인가요?",
+    "answer": "내성적이라서",
+    "author": "admin"
+  },
+  {
+    "id": 92,
+    "question": "달걀을 팔아서 번 돈을 무엇이라고 하죠?",
+    "answer": "에그머니",
+    "author": "admin"
+  },
+  {
+    "id": 93,
+    "question": "가장 싼 사냥 도구는?",
+    "answer": "파리채",
+    "author": "admin"
+  },
+  {
+    "id": 94,
+    "question": "개가 사람을 가르치다 라는 사자성어는?",
+    "answer": "개인지도",
+    "author": "admin"
+  },
+  {
+    "id": 95,
+    "question": "사우디에서 우리나라까지 석유가 수입되어서 오는 기간은?",
+    "answer": "오일",
+    "author": "admin"
+  },
+  {
+    "id": 96,
+    "question": "식인종이 우사인 볼트를 보면 하는 말이 있대요",
+    "answer": "패스트푸드",
+    "author": "admin"
+  },
+  {
+    "id": 97,
+    "question": "말이 분노하고 있다를 네자로 줄이면",
+    "answer": "마리화나",
+    "author": "admin"
+  },
+  {
+    "id": 98,
+    "question": "동생이 형을 너무 좋아한다를 세자로 말하면?",
+    "answer": "형광펜",
+    "author": "admin"
+  },
+  {
+    "id": 99,
+    "question": "인천 앞바다의 반댓말은?",
+    "answer": "인천엄마다",
+    "author": "admin"
+  },
+  {
+    "id": 100,
+    "question": "세상에서 가장 무서운 전화의 이름은?",
+    "answer": "무선전화",
+    "author": "admin"
+  }
+]
+

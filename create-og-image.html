@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>OG 이미지 생성 - 오늘의 아재개그</title>
+</head>
+<body>
+    <h1>OG 이미지 생성 도구</h1>
+    <canvas id="ogCanvas" width="1200" height="630" style="border: 1px solid #ccc; max-width: 100%;"></canvas>
+    <br><br>
+    <button onclick="downloadOGImage()">og-image.png 다운로드</button>
+    
+    <script>
+        const canvas = document.getElementById('ogCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // 그라데이션 배경
+        const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
+        gradient.addColorStop(0, '#667eea');
+        gradient.addColorStop(1, '#764ba2');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 1200, 630);
+        
+        // 제목
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 80px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('오늘의 아재개그', 600, 200);
+        
+        // 이모지 아이콘
+        ctx.font = '120px Arial';
+        ctx.fillText('😁', 600, 320);
+        
+        // 부제목
+        ctx.font = '36px Arial';
+        ctx.fillText('매일 새로운 아재개그로 하루를 즐겁게!', 600, 420);
+        
+        // 하단 브랜드
+        ctx.font = '24px Arial';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx.fillText('joke.ashlight.store', 600, 580);
+        
+        function downloadOGImage() {
+            const link = document.createElement('a');
+            link.download = 'og-image.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
