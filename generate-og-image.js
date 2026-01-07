@@ -32,7 +32,7 @@ ctx.fillText('매일 새로운 아재개그로 하루를 즐겁게!', width / 2,
 // 하단 브랜드
 ctx.font = '24px Arial';
 ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-ctx.fillText('joke.ashlight.store', width / 2, 580);
+ctx.fillText('joke.funnyfunny.cloud', width / 2, 580);
 
 // PNG로 저장
 const buffer = canvas.toBuffer('image/png');
