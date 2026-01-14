@@ -19,11 +19,15 @@ const elements = {
 
 // 날짜 표시 업데이트
 function updateDateDisplay() {
+    const t = window.t || ((key, vars = {}) => key);
     const today = new Date();
     const year = today.getFullYear();
     const month = String(today.getMonth() + 1).padStart(2, '0');
     const date = String(today.getDate()).padStart(2, '0');
-    const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+    const locale = window.currentLang === 'en' ? 'en-US' : 'ko-KR';
+    const dayNames = window.currentLang === 'en' 
+      ? ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+      : ['일', '월', '화', '수', '목', '금', '토'];
     const dayName = dayNames[today.getDay()];
     
     elements.dateDisplay.textContent = `${year}.${month}.${date} (${dayName})`;
@@ -47,61 +51,70 @@ async function loadJokes() {
         elements.loading.classList.remove('hidden');
         
         const response = await fetch('jokes.json');
+        const t = window.t || ((key, vars = {}) => key);
         if (!response.ok) {
-            throw new Error('아재개그 데이터를 불러올 수 없습니다.');
+            throw new Error(t('errorLoadData'));
         }
         
         jokesData = await response.json();
         todayJoke = getTodayJoke();
+        window.todayJoke = todayJoke;
         
         if (todayJoke) {
             displayJoke(todayJoke);
         } else {
-            throw new Error('아재개그를 불러올 수 없습니다.');
+            throw new Error(t('errorLoadJoke'));
         }
         
         elements.loading.classList.add('hidden');
     } catch (error) {
         elements.loading.classList.add('hidden');
         console.error('아재개그 로드 실패:', error);
-        alert('아재개그를 불러올 수 없습니다. 페이지를 새로고침해주세요.');
+        const t = window.t || ((key, vars = {}) => key);
+        alert(t('alertLoadError'));
     }
 }
 
 // 아재개그 표시
 function displayJoke(joke) {
+    const t = window.t || ((key, vars = {}) => key);
     elements.jokeQuestion.textContent = joke.question;
     elements.jokeAnswer.textContent = joke.answer;
     
     // 정답 카드 숨기기
     elements.answerCard.style.display = 'none';
-    elements.showAnswerBtn.textContent = '정답 보기 👀';
+    elements.showAnswerBtn.textContent = t('btnShowAnswer');
     elements.showAnswerBtn.style.display = 'block';
 }
 
 // 정답 보기/숨기기 토글
 function toggleAnswer() {
+    const t = window.t || ((key, vars = {}) => key);
     const isVisible = elements.answerCard.style.display !== 'none';
     
     if (isVisible) {
         elements.answerCard.style.display = 'none';
-        elements.showAnswerBtn.textContent = '정답 보기 👀';
+        elements.showAnswerBtn.textContent = t('btnShowAnswer');
     } else {
         elements.answerCard.style.display = 'block';
-        elements.showAnswerBtn.textContent = '정답 숨기기 🙈';
+        elements.showAnswerBtn.textContent = t('btnHideAnswer');
     }
 }
 
 // 문제만 공유
 async function shareQuestion() {
+    const t = window.t || ((key, vars = {}) => key);
     if (!todayJoke) return;
     
-    const shareText = `오늘의 아재개그 😁\n\nQ. ${todayJoke.question}\n\n👇 정답은 사이트에서 보기!\n${window.location.href}`;
+    const shareText = t('shareQuestionTemplate', {
+        question: todayJoke.question,
+        url: window.location.href
+    });
     
     if (navigator.share) {
         try {
             await navigator.share({
-                title: '오늘의 아재개그',
+                title: t('shareTitle'),
                 text: shareText,
                 url: window.location.href
             });
@@ -117,14 +130,18 @@ async function shareQuestion() {
 
 // 정답 포함 공유
 async function shareWithAnswer() {
+    const t = window.t || ((key, vars = {}) => key);
     if (!todayJoke) return;
     
-    const shareText = `오늘의 아재개그 😁\n\nQ. ${todayJoke.question}\n\nA. ${todayJoke.answer}`;
+    const shareText = t('shareWithAnswerTemplate', {
+        question: todayJoke.question,
+        answer: todayJoke.answer
+    });
     
     if (navigator.share) {
         try {
             await navigator.share({
-                title: '오늘의 아재개그',
+                title: t('shareTitle'),
                 text: shareText,
                 url: window.location.href
             });
@@ -140,12 +157,13 @@ async function shareWithAnswer() {
 
 // 공유 대체 방법
 function fallbackShare(text) {
+    const t = window.t || ((key, vars = {}) => key);
     if (navigator.clipboard) {
         navigator.clipboard.writeText(text).then(() => {
-            alert('클립보드에 복사되었습니다!');
+            alert(t('alertCopied'));
         });
     } else {
-        prompt('아래 텍스트를 복사하세요:', text);
+        prompt(t('promptCopy'), text);
     }
 }
 
@@ -166,8 +184,9 @@ function getRandomColor() {
 
 // 카드 이미지 생성 및 공유
 async function createAndShareImage() {
+    const t = window.t || ((key, vars = {}) => key);
     if (!todayJoke) {
-        alert('아재개그를 먼저 불러와주세요.');
+        alert(t('alertLoadError'));
         return;
     }
     
@@ -193,8 +212,9 @@ async function createAndShareImage() {
         ctx.textBaseline = 'middle';
         
         // 제목
+        const t = window.t || ((key, vars = {}) => key);
         ctx.font = 'bold 48px Arial';
-        ctx.fillText('오늘의 아재개그 😁', 600, 80);
+        ctx.fillText(t('title'), 600, 80);
         
         // 날짜
         const today = new Date();
@@ -216,9 +236,10 @@ async function createAndShareImage() {
         canvas.toBlob(async (blob) => {
             if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], 'joke.png', { type: 'image/png' })] })) {
                 try {
-                    const file = new File([blob], '오늘의아재개그.png', { type: 'image/png' });
+                    const t = window.t || ((key, vars = {}) => key);
+                    const file = new File([blob], t('shareImageFilename'), { type: 'image/png' });
                     await navigator.share({
-                        title: '오늘의 아재개그',
+                        title: t('shareTitle'),
                         text: `${todayJoke.question}`,
                         files: [file]
                     });
@@ -233,7 +254,8 @@ async function createAndShareImage() {
         }, 'image/png');
     } catch (error) {
         console.error('이미지 생성 실패:', error);
-        alert('이미지 생성에 실패했습니다.');
+        const t = window.t || ((key, vars = {}) => key);
+        alert(t('alertImageError'));
     }
 }
 
@@ -261,15 +283,16 @@ function wrapText(context, text, x, y, maxWidth, lineHeight) {
 
 // 이미지 다운로드
 function downloadImage(blob) {
+    const t = window.t || ((key, vars = {}) => key);
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = '오늘의아재개그.png';
+    a.download = t('shareImageFilename');
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    alert('이미지가 다운로드되었습니다!');
+    alert(t('alertImageDownloaded'));
 }
 
 // 이벤트 리스너

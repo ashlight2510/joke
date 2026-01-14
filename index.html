@@ -125,10 +125,53 @@
         text-align: center;
 }
   </style>
+  <style>
+    .lang-switch {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: inline-flex;
+      gap: 0;
+      padding: 3px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+    .lang-switch button {
+      border: none;
+      background: transparent;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-width: 44px;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    .lang-switch button.active {
+      background: #667eea;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+    }
+    .lang-switch button:not(.active):hover {
+      background: rgba(102, 126, 234, 0.1);
+      color: rgba(0, 0, 0, 0.9);
+    }
+  </style>
 </head>
-  <body><div class="container">
+  <body>
+    <div class="lang-switch" role="tablist" aria-label="Language switcher">
+      <button type="button" data-lang="ko" class="active">KR</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <div class="container">
       <header>
-        <h1 class="title">오늘의 아재개그 😁</h1>
+        <h1 class="title" data-i18n="title">오늘의 아재개그 😁</h1>
         <div class="date-info">
           <span id="date-display">--</span>
         </div>
@@ -138,12 +181,12 @@
         <!-- 문제 카드 -->
         <div class="joke-card question-card">
           <div class="card-label">Q.</div>
-          <div class="joke-question" id="joke-question">로딩 중...</div>
+          <div class="joke-question" id="joke-question" data-i18n="loading">로딩 중...</div>
         </div>
 
         <!-- 정답 보기 버튼 -->
         <div class="answer-section" id="answer-section">
-          <button id="show-answer-btn" class="show-answer-btn">
+          <button id="show-answer-btn" class="show-answer-btn" data-i18n="btnShowAnswer">
             정답 보기 👀
           </button>
         </div>
@@ -160,13 +203,13 @@
 
         <!-- 공유 섹션 -->
         <div class="share-section">
-          <button id="share-question-btn" class="share-btn">
+          <button id="share-question-btn" class="share-btn" data-i18n="btnShareQuestion">
             문제만 공유 📤
           </button>
-          <button id="share-with-answer-btn" class="share-btn secondary">
+          <button id="share-with-answer-btn" class="share-btn secondary" data-i18n="btnShareWithAnswer">
             정답까지 공유 💬
           </button>
-          <button id="share-image-btn" class="share-btn image-btn">
+          <button id="share-image-btn" class="share-btn image-btn" data-i18n="btnShareImage">
             이미지로 공유 🖼️
           </button>
         </div>
@@ -187,9 +230,158 @@
 
     <div id="loading" class="loading hidden">
       <div class="spinner"></div>
-      <p>아재개그를 불러오는 중...</p>
+      <p data-i18n="loadingJokes">아재개그를 불러오는 중...</p>
     </div>
 
+    <script>
+      // =========================
+      // i18n
+      // =========================
+      const translations = {
+        ko: {
+          metaTitle: "오늘의 아재개그 😁 - 매일 새로운 아재개그로 하루를 즐겁게!",
+          metaDescription: "오늘의 아재개그 - 매일 새로운 아재개그로 하루를 즐겁게! 문제만 공유하거나 정답까지 공유할 수 있어요. 100개의 엄선된 아재개그 모음",
+          title: "오늘의 아재개그 😁",
+          loading: "로딩 중...",
+          loadingJokes: "아재개그를 불러오는 중...",
+          btnShowAnswer: "정답 보기 👀",
+          btnHideAnswer: "정답 숨기기 🙈",
+          btnShareQuestion: "문제만 공유 📤",
+          btnShareWithAnswer: "정답까지 공유 💬",
+          btnShareImage: "이미지로 공유 🖼️",
+          shareTitle: "오늘의 아재개그",
+          shareQuestionTemplate: "오늘의 아재개그 😁\n\nQ. {question}\n\n👇 정답은 사이트에서 보기!\n{url}",
+          shareWithAnswerTemplate: "오늘의 아재개그 😁\n\nQ. {question}\n\nA. {answer}",
+          shareImageFilename: "오늘의아재개그.png",
+          alertCopied: "클립보드에 복사되었습니다!",
+          alertImageDownloaded: "이미지가 다운로드되었습니다!",
+          alertImageError: "이미지 생성에 실패했습니다.",
+          alertLoadError: "아재개그를 불러올 수 없습니다. 페이지를 새로고침해주세요.",
+          errorLoadData: "아재개그 데이터를 불러올 수 없습니다.",
+          errorLoadJoke: "아재개그를 불러올 수 없습니다.",
+          moreTestsBtn: "더 많은 테스트 해보기",
+        },
+        en: {
+          metaTitle: "Daily Dad Jokes 😁 - Start your day with a new joke!",
+          metaDescription: "Daily Dad Jokes - Start your day with a new joke! Share just the question or include the answer. Collection of 100 curated dad jokes",
+          title: "Daily Dad Jokes 😁",
+          loading: "Loading...",
+          loadingJokes: "Loading jokes...",
+          btnShowAnswer: "Show Answer 👀",
+          btnHideAnswer: "Hide Answer 🙈",
+          btnShareQuestion: "Share Question 📤",
+          btnShareWithAnswer: "Share with Answer 💬",
+          btnShareImage: "Share as Image 🖼️",
+          shareTitle: "Daily Dad Jokes",
+          shareQuestionTemplate: "Daily Dad Jokes 😁\n\nQ. {question}\n\n👇 See the answer on the site!\n{url}",
+          shareWithAnswerTemplate: "Daily Dad Jokes 😁\n\nQ. {question}\n\nA. {answer}",
+          shareImageFilename: "DailyDadJokes.png",
+          alertCopied: "Copied to clipboard!",
+          alertImageDownloaded: "Image downloaded!",
+          alertImageError: "Failed to generate image.",
+          alertLoadError: "Unable to load jokes. Please refresh the page.",
+          errorLoadData: "Unable to load joke data.",
+          errorLoadJoke: "Unable to load joke.",
+          moreTestsBtn: "Explore more tests",
+        },
+      };
+
+      const defaultLang = "ko";
+      const supportedLangs = ["ko", "en"];
+      let currentLang = defaultLang;
+
+      function t(key, vars = {}) {
+        const langTable = translations[currentLang] || translations.ko;
+        let template = langTable?.[key] ?? translations.ko?.[key] ?? key;
+        if (typeof template !== "string") return template;
+        Object.keys(vars).forEach((k) => {
+          template = template.replace(new RegExp(`\\{${k}\\}`, "g"), vars[k]);
+        });
+        return template;
+      }
+
+      function applyTranslations() {
+        document.title = t("metaTitle");
+        const descMeta = document.querySelector('meta[name="description"]');
+        if (descMeta) descMeta.setAttribute("content", t("metaDescription"));
+        const ogTitleMeta = document.querySelector('meta[property="og:title"]');
+        if (ogTitleMeta) ogTitleMeta.setAttribute("content", t("metaTitle"));
+        const ogDescMeta = document.querySelector('meta[property="og:description"]');
+        if (ogDescMeta) ogDescMeta.setAttribute("content", t("metaDescription"));
+        const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
+        if (twitterTitleMeta) twitterTitleMeta.setAttribute("content", t("metaTitle"));
+        const twitterDescMeta = document.querySelector('meta[name="twitter:description"]');
+        if (twitterDescMeta) twitterDescMeta.setAttribute("content", t("metaDescription"));
+        document.documentElement.lang = currentLang;
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          el.textContent = t(el.dataset.i18n);
+        });
+        document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+          el.innerHTML = t(el.dataset.i18nHtml);
+        });
+        document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+          el.setAttribute("aria-label", t(el.dataset.i18nAria));
+        });
+        document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+          el.setAttribute("alt", t(el.dataset.i18nAlt));
+        });
+      }
+
+      function detectLang() {
+        const params = new URLSearchParams(window.location.search);
+        const paramLang = params.get("lang");
+        if (supportedLangs.includes(paramLang)) return paramLang;
+        const stored = localStorage.getItem("preferredLang");
+        if (supportedLangs.includes(stored)) return stored;
+        const intlLocale =
+          typeof Intl === "object" && typeof Intl.DateTimeFormat === "function"
+            ? Intl.DateTimeFormat().resolvedOptions().locale
+            : "";
+        const sources = [
+          ...(navigator.languages || []),
+          navigator.language,
+          navigator.userLanguage,
+          intlLocale,
+        ]
+          .filter(Boolean)
+          .map((locale) => locale.toLowerCase());
+        const hasKorean = sources.some((locale) => locale.startsWith("ko"));
+        return hasKorean ? "ko" : "en";
+      }
+
+      function setLang(lang, options = {}) {
+        const nextLang = supportedLangs.includes(lang) ? lang : defaultLang;
+        currentLang = nextLang;
+        window.currentLang = currentLang;
+        document.documentElement.lang = nextLang;
+        localStorage.setItem("preferredLang", nextLang);
+        document.querySelectorAll(".lang-switch button").forEach((button) => {
+          button.classList.toggle("active", button.dataset.lang === nextLang);
+        });
+        applyTranslations();
+        if (options.updateUrl) {
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", nextLang);
+          window.history.replaceState({}, "", url);
+        }
+        // Update dynamic content if needed
+        if (window.updateDateDisplay) window.updateDateDisplay();
+        if (window.displayJoke && window.todayJoke) window.displayJoke(window.todayJoke);
+      }
+
+      document.querySelectorAll(".lang-switch button").forEach((button) => {
+        button.addEventListener("click", () => {
+          setLang(button.dataset.lang, { updateUrl: true });
+        });
+      });
+
+      setLang(detectLang(), { updateUrl: false });
+
+      // Make t() function and currentLang globally available
+      window.t = t;
+      window.currentLang = currentLang;
+      window.setLang = setLang;
+    </script>
     <script src="script.js"></script>
   
     
@@ -203,7 +395,8 @@
           moreBtn.id = 'more-tests-btn';
           moreBtn.type = 'button';
           moreBtn.dataset.url = targetUrl;
-          moreBtn.textContent = '더 많은 테스트 해보기';
+          const t = window.t || ((key, vars = {}) => key);
+          moreBtn.textContent = t('moreTestsBtn');
           moreBtn.className = 'w-full py-4 bg-white border border-purple-100 text-purple-700 font-semibold rounded-xl hover:bg-purple-50 hover:border-purple-200 transition-all duration-200 mt-3';
           moreBtn.addEventListener('click', function () {
             window.open(targetUrl, '_blank', 'noopener');
