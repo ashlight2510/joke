@@ -325,6 +325,11 @@
         document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
           el.setAttribute("alt", t(el.dataset.i18nAlt));
         });
+        // 더 많은 테스트 해보기 버튼 텍스트 업데이트
+        const moreTestsBtn = document.getElementById('more-tests-btn');
+        if (moreTestsBtn) {
+          moreTestsBtn.textContent = t('moreTestsBtn');
+        }
       }
 
       function detectLang() {
@@ -360,7 +365,9 @@
         }
         // Update dynamic content if needed
         if (window.updateDateDisplay) window.updateDateDisplay();
-        if (window.displayJoke && window.todayJoke) window.displayJoke(window.todayJoke);
+        if (window.displayJoke && window.todayJoke) {
+          window.displayJoke(window.todayJoke);
+        }
       }
 
       document.querySelectorAll(".lang-switch button").forEach((button) => {
@@ -383,30 +390,81 @@
       (function () {
         'use strict';
         const targetUrl = 'https://funnyfunny.cloud/';
+        
+        function updateMoreTestsButton() {
+          const btn = document.getElementById('more-tests-btn');
+          if (!btn) return;
+          const t = window.t || ((key, vars = {}) => key);
+          btn.textContent = t('moreTestsBtn');
+        }
+        
         function addMoreTestsButton() {
-          if (document.getElementById('more-tests-btn')) return;
-          const moreBtn = document.createElement('button');
+          // 이미 버튼이 있으면 텍스트만 업데이트
+          let moreBtn = document.getElementById('more-tests-btn');
+          if (moreBtn) {
+            updateMoreTestsButton();
+            return;
+          }
+          
+          moreBtn = document.createElement('button');
           moreBtn.id = 'more-tests-btn';
           moreBtn.type = 'button';
-          moreBtn.dataset.url = targetUrl;
+          moreBtn.className = 'more-tests-btn';
+          
           const t = window.t || ((key, vars = {}) => key);
           moreBtn.textContent = t('moreTestsBtn');
-          moreBtn.className = 'w-full py-4 bg-white border border-purple-100 text-purple-700 font-semibold rounded-xl hover:bg-purple-50 hover:border-purple-200 transition-all duration-200 mt-3';
+          
           moreBtn.addEventListener('click', function () {
             window.open(targetUrl, '_blank', 'noopener');
           });
-          const shareButton = document.querySelector("button#share-btn, button#shareBtn, button[id*=\"share\"]");
-          if (shareButton) {
-            shareButton.insertAdjacentElement('afterend', moreBtn);
-          } else if (document.body) {
+          
+          // footer 위에 추가 (main 태그 다음, footer 이전)
+          const footer = document.querySelector('footer');
+          const container = document.querySelector('.container');
+          
+          if (footer && footer.parentNode) {
+            footer.parentNode.insertBefore(moreBtn, footer);
+          } else if (container) {
+            // main 태그 다음에 추가
+            const main = container.querySelector('main');
+            if (main && main.nextSibling) {
+              container.insertBefore(moreBtn, main.nextSibling);
+            } else {
+              container.appendChild(moreBtn);
+            }
+          } else {
             document.body.appendChild(moreBtn);
           }
         }
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', addMoreTestsButton);
-        } else {
-          addMoreTestsButton();
+        
+        function init() {
+          // DOM이 완전히 로드된 후 실행
+          function tryAddButton() {
+            const footer = document.querySelector('footer');
+            if (footer || document.querySelector('.container')) {
+              addMoreTestsButton();
+            } else {
+              setTimeout(tryAddButton, 50);
+            }
+          }
+          
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', tryAddButton);
+          } else {
+            tryAddButton();
+          }
+          
+          // 언어 변경 시 버튼 텍스트 업데이트
+          const originalSetLang = window.setLang;
+          if (originalSetLang) {
+            window.setLang = function(lang, options) {
+              originalSetLang(lang, options);
+              setTimeout(updateMoreTestsButton, 100);
+            };
+          }
         }
+        
+        init();
       })();
     </script>
 

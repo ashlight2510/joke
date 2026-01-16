@@ -3,601 +3,800 @@
     "id": 1,
     "question": "아기 공룡 둘리가 고등학교에 입학했대요. 어디 고등학교죠?",
     "answer": "빙하타고",
+    "question_en": "Baby dinosaur Dooly entered high school. Which high school?",
+    "answer_en": "Iceberg High",
     "author": "admin"
   },
   {
     "id": 2,
     "question": "세상에서 가장 쎈 대학교 이름은?",
     "answer": "와세다 대학",
+    "question_en": "What's the strongest university in the world?",
+    "answer_en": "Waseda University",
     "author": "admin"
   },
   {
     "id": 3,
     "question": "가장 지루하고 지겨운 중학교 이름은?",
     "answer": "로딩중",
+    "question_en": "What's the most boring middle school name?",
+    "answer_en": "Loading Middle School",
     "author": "admin"
   },
   {
     "id": 4,
     "question": "해리포터는 어떤 사람을 말하는가요?",
     "answer": "해를 취재하는 사람",
+    "question_en": "What kind of person is Harry Potter?",
+    "answer_en": "A person who covers the sun",
     "author": "admin"
   },
   {
     "id": 5,
     "question": "우리 몸에 좋지 않은 청바지 이름은?",
     "answer": "유해진",
+    "question_en": "What's the name of jeans that are bad for our body?",
+    "answer_en": "Yoo Hae-jin",
     "author": "admin"
   },
   {
     "id": 6,
     "question": "도둑놈이 가장 좋아하는 아이스크림은?",
     "answer": "보석바",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What ice cream do thieves love most?",
+    "answer_en": "Jewel Bar"
   },
   {
     "id": 7,
     "question": "이 세상에서 가장 뜨거운 과일은?",
     "answer": "천도복숭아",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the hottest fruit in the world?",
+    "answer_en": "Peach"
   },
   {
     "id": 8,
     "question": "반성문을 영어로 표현하면?",
     "answer": "글로벌",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How do you say \"reflection essay\" in English?",
+    "answer_en": "Global"
   },
   {
     "id": 9,
     "question": "우리나라에서 가장 오래된 화장실은?",
     "answer": "전봇대",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the oldest bathroom in Korea?",
+    "answer_en": "Utility pole"
   },
   {
     "id": 10,
     "question": "아픈 사람들이 원하는 반지는 어떤 반지가 있죠?",
     "answer": "힐링",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What ring do sick people want?",
+    "answer_en": "Healing"
   },
   {
     "id": 11,
     "question": "몸매랑 얼굴은 예쁜데 속이 텅빈 여자는?",
     "answer": "마네킹",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A woman with a pretty body and face but empty inside?",
+    "answer_en": "Mannequin"
   },
   {
     "id": 12,
     "question": "서울에서 조금 뚱뚱한 사람들이 사는 동네는?",
     "answer": "반포동",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Where do slightly chubby people live in Seoul?",
+    "answer_en": "Banpo-dong"
   },
   {
     "id": 13,
     "question": "지구에서 기형아가 가장 많이 태어나는 나라 이름은?",
     "answer": "네팔",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Which country has the most birth defects?",
+    "answer_en": "Nepal"
   },
   {
     "id": 14,
     "question": "아이스크림이 죽다는 네자로 줄여보세요",
     "answer": "다이하드",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Ice cream dies - shorten to 4 letters",
+    "answer_en": "Die Hard"
   },
   {
     "id": 15,
     "question": "김밥이 경찰서에 간 이유는 무엇인겨?",
     "answer": "참기름이 고소해서",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Why did kimbap go to the police station?",
+    "answer_en": "Because sesame oil filed a complaint"
   },
   {
     "id": 16,
     "question": "세상에서 가장 야한 채소는 무엇인겨?",
     "answer": "버섯",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the most suggestive vegetable?",
+    "answer_en": "Mushroom"
   },
   {
     "id": 17,
     "question": "김밥이 죽으면 어디로 가남요?",
     "answer": "김밥천국",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Where does kimbap go when it dies?",
+    "answer_en": "Kimbap Heaven"
   },
   {
     "id": 18,
     "question": "바나나가 웃으면?",
     "answer": "바나나킥",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What happens when a banana laughs?",
+    "answer_en": "Banana Kick"
   },
   {
     "id": 19,
     "question": "아버지가 정말 강한 사람이다를 세자로 줄이면?",
     "answer": "부가세",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Father is really strong - shorten to 3 letters",
+    "answer_en": "VAT"
   },
   {
     "id": 20,
     "question": "할아버지 할머니가 가장 좋아하는 폭포는 무엇이대요?",
     "answer": "나이야가라",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What waterfall do grandparents love most?",
+    "answer_en": "Niagara"
   },
   {
     "id": 21,
     "question": "할아버지가 좋아하는 돈은?",
     "answer": "할머니",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What money do grandfathers love?",
+    "answer_en": "Grandmother"
   },
   {
     "id": 22,
     "question": "조금 전에 울었다가 그쳤던 사람을 다섯자로 줄이면",
     "answer": "아까운사람",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A person who just stopped crying - shorten to 5 letters",
+    "answer_en": "Precious person"
   },
   {
     "id": 23,
     "question": "한의사가 가장 좋아하는 말은?",
     "answer": "인생은 한방이여",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What do traditional doctors love most?",
+    "answer_en": "Life is one shot"
   },
   {
     "id": 24,
     "question": "이 죽을 먹으면 자연스럽게 웃게 되죠. 무슨 죽이죠?",
     "answer": "히죽",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What porridge makes you laugh naturally?",
+    "answer_en": "Hee-juk"
   },
   {
     "id": 25,
     "question": "이 세상에서 가장 쉬운 숫자는",
     "answer": "190000(쉽구만)",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "The easiest number in the world",
+    "answer_en": "190000 (easy)"
   },
   {
     "id": 26,
     "question": "닿기만 해도 취하는 술이 있어요.",
     "answer": "입술",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What alcohol makes you drunk just by touching?",
+    "answer_en": "Lips"
   },
   {
     "id": 27,
     "question": "아저씨들이 좋아하는 돈은?",
     "answer": "아주머니",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What money do uncles love?",
+    "answer_en": "Aunt"
   },
   {
     "id": 28,
     "question": "도둑놈이 훔치는 돈을 무엇이라고 말할까?",
     "answer": "슬그머니",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What do you call money that thieves steal?",
+    "answer_en": "Sneakily"
   },
   {
     "id": 29,
     "question": "채소 장수가 가장 싫어하는 도시 이름은?",
     "answer": "시드니",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What city do vegetable vendors hate most?",
+    "answer_en": "Sydney"
   },
   {
     "id": 30,
     "question": "사람의 머리가 세 개 있다를 영어로 말하면?",
     "answer": "헤드셋",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How do you say \"a person with three heads\" in English?",
+    "answer_en": "Headset"
   },
   {
     "id": 31,
     "question": "인디언 추장보다 높은 사람은?",
     "answer": "고추장",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Who is higher than an Indian chief?",
+    "answer_en": "Gochujang"
   },
   {
     "id": 32,
     "question": "어부들이 이 가수를 싫어합니다. 누구죠?",
     "answer": "배철수",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Fishermen hate this singer. Who?",
+    "answer_en": "Bae Chul-soo"
   },
   {
     "id": 33,
     "question": "남을 등처먹고 사는 사람은?",
     "answer": "안마사",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A person who lives by backstabbing others?",
+    "answer_en": "Massage therapist"
   },
   {
     "id": 34,
     "question": "많은 개수의 모자가 뭉쳐 있는 것을 네자로 줄이면",
     "answer": "밀짚모자",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Many hats gathered together - shorten to 4 letters",
+    "answer_en": "Straw hat"
   },
   {
     "id": 35,
     "question": "제일 억울한 도형은?",
     "answer": "원통",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "The most unfair shape?",
+    "answer_en": "Cylinder"
   },
   {
     "id": 36,
     "question": "모든 사람들을 일어나게 하는 숫자는?",
     "answer": "5 (다~섯)",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What number wakes everyone up?",
+    "answer_en": "5 (five)"
   },
   {
     "id": 37,
     "question": "치과 의사들은 이 아파트에는 살지 않아요. 어디예요?",
     "answer": "이편한세상",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Dentists don't live in this apartment. Where?",
+    "answer_en": "Comfortable world"
   },
   {
     "id": 38,
     "question": "세계에서 가장 인기 있는 벌레 이름은?",
     "answer": "스타벅스",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the most popular bug in the world?",
+    "answer_en": "Starbucks"
   },
   {
     "id": 39,
     "question": "지방 흡임의 반대말이 있다네요.",
     "answer": "수도권배출",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "There's an opposite of \"local absorption\"",
+    "answer_en": "Metropolitan discharge"
   },
   {
     "id": 40,
     "question": "소금의 유통기간은 며칠일까요?",
     "answer": "천일(염)",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How many days is the shelf life of salt?",
+    "answer_en": "Thousand days (salt)"
   },
   {
     "id": 41,
     "question": "이 세상에서 가장 잔인한 비빔밥은?",
     "answer": "산채비빔밥",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the most cruel bibimbap?",
+    "answer_en": "Mountain vegetable bibimbap"
   },
   {
     "id": 42,
     "question": "고등학생이 가장 싫어하는 나무 이름은?",
     "answer": "야자나무",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What tree do high school students hate most?",
+    "answer_en": "Palm tree"
   },
   {
     "id": 43,
     "question": "비가 한시간 동안 내린다를 5자로 줄이면",
     "answer": "추적육십분",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Rain falls for one hour - shorten to 5 letters",
+    "answer_en": "Chase sixty minutes"
   },
   {
     "id": 44,
     "question": "승용차 문을 세게 닫으면 안되는 이유는?",
     "answer": "문에 네개니까",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Why shouldn't you slam car doors?",
+    "answer_en": "Because there are four doors"
   },
   {
     "id": 45,
     "question": "미소의 반댓말을 무엇이라 하죠?",
     "answer": "당기소",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the opposite of a smile?",
+    "answer_en": "Pull smile"
   },
   {
     "id": 46,
     "question": "사람의 몸무게가 가장 많이 나갈때는 언제인가요?",
     "answer": "철들때",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "When does a person weigh the most?",
+    "answer_en": "When they mature"
   },
   {
     "id": 47,
     "question": "자동차를 발로 차다를 네자로 말한다면?",
     "answer": "카놀라유",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Kick a car with your foot - shorten to 4 letters",
+    "answer_en": "Canola oil"
   },
   {
     "id": 48,
     "question": "소변과 대변 중에 어떤 것이 먼저 나오는지 아는 사람?",
     "answer": "급한것",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Who knows which comes first, urine or feces?",
+    "answer_en": "The urgent one"
   },
   {
     "id": 49,
     "question": "단무지가 버스를 타면서 하는 말은?",
     "answer": "저 무임 승차요",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What does pickled radish say when riding the bus?",
+    "answer_en": "I'm riding for free"
   },
   {
     "id": 50,
     "question": "전화를 가지고 건물을 세웠는데 그 건물의 이름은?",
     "answer": "콜로세움",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A building built with a phone. What's its name?",
+    "answer_en": "Colosseum"
   },
   {
     "id": 51,
     "question": "신데렐라가 잠을 못잔다를 네자로 줄이면",
     "answer": "모짜렐라",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Cinderella can't sleep - shorten to 4 letters",
+    "answer_en": "Mozzarella"
   },
   {
     "id": 52,
     "question": "신이 화를 내고 있다를 세자로 줄이면",
     "answer": "신발끈",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "God is angry - shorten to 3 letters",
+    "answer_en": "Shoelace"
   },
   {
     "id": 53,
     "question": "우리나라에서 땅값이 가장 싼 동네의 이름은?",
     "answer": "일원동",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the cheapest neighborhood in Korea?",
+    "answer_en": "Ilwon-dong"
   },
   {
     "id": 54,
     "question": "술과 커피를 팔지 않습니다를 사자성어로 하면?",
     "answer": "주차금지",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Don't sell alcohol and coffee - say in 4 characters",
+    "answer_en": "No parking"
   },
   {
     "id": 55,
     "question": "연예인 송해교 송대관 송윤아 송중기의 공통점을 세자로 줄이면?",
     "answer": "성동일",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Song Hae-gyo, Song Dae-gwan, Song Yoon-ah, Song Joong-ki - common point in 3 letters",
+    "answer_en": "Same surname"
   },
   {
     "id": 56,
     "question": "한국에서 가장 싸움을 잘하는 오리는?",
     "answer": "을지문덕",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the best fighting duck in Korea?",
+    "answer_en": "Eulji Mundeok"
   },
   {
     "id": 57,
     "question": "딱 세사람 밖에 탈 수 없는 차 이름은?",
     "answer": "인삼차",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A car that only three people can ride - what's its name?",
+    "answer_en": "Ginseng tea"
   },
   {
     "id": 58,
     "question": "일본산 귤이 자신을 까먹으라고 하는 말은?",
     "answer": "나까무라",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What does a Japanese tangerine say when peeling itself?",
+    "answer_en": "Nakamura"
   },
   {
     "id": 59,
     "question": "드라마를 제작했는데 새우가 주인공이래요? 어떤 드라마죠?",
     "answer": "대하드라마",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A drama was made with a shrimp as the main character. What drama?",
+    "answer_en": "Epic drama"
   },
   {
     "id": 60,
     "question": "호랑이가 새차를 타고 지나가는 여자에게 하는 말은?",
     "answer": "타이거",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What does a tiger say to a woman passing by in a new car?",
+    "answer_en": "Tiger"
   },
   {
     "id": 61,
     "question": "못팔고도 돈을 잘 버는 사람은 누구인교?",
     "answer": "철물점 아저씨",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Who makes money well without selling nails?",
+    "answer_en": "Hardware store owner"
   },
   {
     "id": 62,
     "question": "곰돌이 푸가 세 마리가 있으면?",
     "answer": "삼푸",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What if there are three Winnie the Pooh bears?",
+    "answer_en": "Shampoo"
   },
   {
     "id": 63,
     "question": "얼음이 죽다를 세자로 줄이면?",
     "answer": "다이빙",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Ice dies - shorten to 3 letters",
+    "answer_en": "Diving"
   },
   {
     "id": 64,
     "question": "왼쪽으로 절하는 것을 이렇게 표현하죠.",
     "answer": "좌절",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How do you express bowing to the left?",
+    "answer_en": "Frustration"
   },
   {
     "id": 65,
     "question": "신발 한통에는 오천원 두통엔?",
     "answer": "게보린",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "One pair of shoes costs 5,000 won. Two pairs?",
+    "answer_en": "Geborin"
   },
   {
     "id": 66,
     "question": "곰은 사고를 어떻게 먹을까요?",
     "answer": "베어먹지롱",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How does a bear eat an accident?",
+    "answer_en": "Bear eat it"
   },
   {
     "id": 67,
     "question": "돌잔치를 하다를 영어로 말해보쇼",
     "answer": "락페스티벌",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How do you say \"having a first birthday party\" in English?",
+    "answer_en": "Rock festival"
   },
   {
     "id": 68,
     "question": "세상에서 가장 뜨거운 바다는?",
     "answer": "열받아",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the hottest sea in the world?",
+    "answer_en": "Angry sea"
   },
   {
     "id": 69,
     "question": "바람이 살랑살랑 가볍고 귀엽게 부는 동네는?",
     "answer": "분당",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A neighborhood where wind blows lightly and cutely?",
+    "answer_en": "Bundang"
   },
   {
     "id": 70,
     "question": "손가락은 핑거라고 말하죠. 주먹은 뭐라고 말하죠?",
     "answer": "오므린거",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Finger is called finger. What do you call a fist?",
+    "answer_en": "Closed one"
   },
   {
     "id": 71,
     "question": "아주 오래전에 건설된 다리를 뭐라 부를까요?",
     "answer": "구닥다리",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What do you call a bridge built a long time ago?",
+    "answer_en": "Old bridge"
   },
   {
     "id": 72,
     "question": "침대를 밀고 돌리다를 네자로 줄이면?",
     "answer": "배드민턴",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Push and turn a bed - shorten to 4 letters",
+    "answer_en": "Badminton"
   },
   {
     "id": 73,
     "question": "우리나라 왕중에 성형한 왕이 있어요. 누구죠?",
     "answer": "인조임금",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Which Korean king had plastic surgery?",
+    "answer_en": "Injo"
   },
   {
     "id": 74,
     "question": "세상에서 가장 돈을 많이 가지고 있는 새는?",
     "answer": "백조",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What bird has the most money in the world?",
+    "answer_en": "Swan"
   },
   {
     "id": 75,
     "question": "복은 크게 받아야 하는데 가장 작은 복은 뭐라할까요?",
     "answer": "복분자",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Fortune should be received big, but what's the smallest fortune?",
+    "answer_en": "Fortune seed"
   },
   {
     "id": 76,
     "question": "땅이 슬프다고 우는데 어떻게 우는지 아는교?",
     "answer": "흙흙!!",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "The ground cries sadly. How does it cry?",
+    "answer_en": "Soil soil!!"
   },
   {
     "id": 77,
     "question": "베를린에서 밥을 먹으면 안되는 이유는?",
     "answer": "독일수도",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Why shouldn't you eat rice in Berlin?",
+    "answer_en": "German capital"
   },
   {
     "id": 78,
     "question": "파 중에서 가장 인기 있는 파는?",
     "answer": "파스타",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the most popular green onion?",
+    "answer_en": "Pasta"
   },
   {
     "id": 79,
     "question": "빵이 시골에 가는 이유는 무얼까?",
     "answer": "소보로",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Why does bread go to the countryside?",
+    "answer_en": "Soboro"
   },
   {
     "id": 80,
     "question": "담배가 시골에 가는 이유는 무얼까?",
     "answer": "말보로",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Why does cigarette go to the countryside?",
+    "answer_en": "Marlboro"
   },
   {
     "id": 81,
     "question": "미국에서 비가 온다를 영어로 말하면?",
     "answer": "usb",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How do you say \"it rains in America\" in English?",
+    "answer_en": "USB"
   },
   {
     "id": 82,
     "question": "과자가 자기 자신을 소개하면서 하는 말은?",
     "answer": "저는 전과자입니다.",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What does a snack say when introducing itself?",
+    "answer_en": "I'm a former snack"
   },
   {
     "id": 83,
     "question": "이 동물은 항상 미안한 마음으로 살아가고 있어요 어떤 동물?",
     "answer": "오소리 (오,쏘~리)",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What animal always lives with a sorry heart?",
+    "answer_en": "Badger"
   },
   {
     "id": 84,
     "question": "이 세상에서 가장 뜨거운 전화는?",
     "answer": "화상전화",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the hottest phone in the world?",
+    "answer_en": "Video call"
   },
   {
     "id": 85,
     "question": "우리나라에서 가장 바쁜 대학교 이름은?",
     "answer": "부산대학교",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the busiest university in Korea?",
+    "answer_en": "Pusan National University"
   },
   {
     "id": 86,
     "question": "호주의 화폐단위를 말하시오.",
     "answer": "호주머니",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the currency unit of Australia?",
+    "answer_en": "Pocket"
   },
   {
     "id": 87,
     "question": "하나님이 버스를 타고 내리다를 세자로 줄이면?",
     "answer": "신내림",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "God gets on and off a bus - shorten to 3 letters",
+    "answer_en": "Divine descent"
   },
   {
     "id": 88,
     "question": "머리 아플 때 약을 얼마나 먹어야 할까?",
     "answer": "두통",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How much medicine should you take when you have a headache?",
+    "answer_en": "Headache"
   },
   {
     "id": 89,
     "question": "아마존에는 누가 살고 있을까요?",
     "answer": "아마...존이",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Who lives in the Amazon?",
+    "answer_en": "Maybe... John"
   },
   {
     "id": 90,
     "question": "이 세상에서 가장 가난한 임금은?",
     "answer": "최저임금",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the poorest king in the world?",
+    "answer_en": "Minimum wage"
   },
   {
     "id": 91,
     "question": "성적이 나와도 말하지 못하는 이유는 무엇인가요?",
     "answer": "내성적이라서",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "Why can't you speak even if your grades come out?",
+    "answer_en": "Because I'm introverted"
   },
   {
     "id": 92,
     "question": "달걀을 팔아서 번 돈을 무엇이라고 하죠?",
     "answer": "에그머니",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What do you call money earned by selling eggs?",
+    "answer_en": "Egg money"
   },
   {
     "id": 93,
     "question": "가장 싼 사냥 도구는?",
     "answer": "파리채",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the cheapest hunting tool?",
+    "answer_en": "Fly swatter"
   },
   {
     "id": 94,
     "question": "개가 사람을 가르치다 라는 사자성어는?",
     "answer": "개인지도",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A four-character idiom meaning \"a dog teaches a person\"?",
+    "answer_en": "Private tutoring"
   },
   {
     "id": 95,
     "question": "사우디에서 우리나라까지 석유가 수입되어서 오는 기간은?",
     "answer": "오일",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "How long does it take for oil to be imported from Saudi Arabia to Korea?",
+    "answer_en": "Oil"
   },
   {
     "id": 96,
     "question": "식인종이 우사인 볼트를 보면 하는 말이 있대요",
     "answer": "패스트푸드",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What does a cannibal say when seeing Usain Bolt?",
+    "answer_en": "Fast food"
   },
   {
     "id": 97,
     "question": "말이 분노하고 있다를 네자로 줄이면",
     "answer": "마리화나",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A horse is angry - shorten to 4 letters",
+    "answer_en": "Marijuana"
   },
   {
     "id": 98,
     "question": "동생이 형을 너무 좋아한다를 세자로 말하면?",
     "answer": "형광펜",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "A younger sibling likes their older sibling too much - say in 3 letters",
+    "answer_en": "Highlighter"
   },
   {
     "id": 99,
     "question": "인천 앞바다의 반댓말은?",
     "answer": "인천엄마다",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the opposite of \"Incheon front sea\"?",
+    "answer_en": "Incheon back sea"
   },
   {
     "id": 100,
     "question": "세상에서 가장 무서운 전화의 이름은?",
     "answer": "무선전화",
-    "author": "admin"
+    "author": "admin",
+    "question_en": "What's the scariest phone in the world?",
+    "answer_en": "Cordless phone"
   }
 ]
-

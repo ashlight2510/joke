@@ -78,8 +78,14 @@ async function loadJokes() {
 // 아재개그 표시
 function displayJoke(joke) {
     const t = window.t || ((key, vars = {}) => key);
-    elements.jokeQuestion.textContent = joke.question;
-    elements.jokeAnswer.textContent = joke.answer;
+    const lang = window.currentLang || 'ko';
+    
+    // 언어에 따라 다른 필드 사용
+    const question = lang === 'en' && joke.question_en ? joke.question_en : joke.question;
+    const answer = lang === 'en' && joke.answer_en ? joke.answer_en : joke.answer;
+    
+    elements.jokeQuestion.textContent = question;
+    elements.jokeAnswer.textContent = answer;
     
     // 정답 카드 숨기기
     elements.answerCard.style.display = 'none';
@@ -106,8 +112,11 @@ async function shareQuestion() {
     const t = window.t || ((key, vars = {}) => key);
     if (!todayJoke) return;
     
+    const lang = window.currentLang || 'ko';
+    const question = lang === 'en' && todayJoke.question_en ? todayJoke.question_en : todayJoke.question;
+    
     const shareText = t('shareQuestionTemplate', {
-        question: todayJoke.question,
+        question: question,
         url: window.location.href
     });
     
@@ -133,9 +142,13 @@ async function shareWithAnswer() {
     const t = window.t || ((key, vars = {}) => key);
     if (!todayJoke) return;
     
+    const lang = window.currentLang || 'ko';
+    const question = lang === 'en' && todayJoke.question_en ? todayJoke.question_en : todayJoke.question;
+    const answer = lang === 'en' && todayJoke.answer_en ? todayJoke.answer_en : todayJoke.answer;
+    
     const shareText = t('shareWithAnswerTemplate', {
-        question: todayJoke.question,
-        answer: todayJoke.answer
+        question: question,
+        answer: answer
     });
     
     if (navigator.share) {
@@ -223,14 +236,18 @@ async function createAndShareImage() {
         ctx.fillText(dateStr, 600, 140);
         
         // 문제
+        const lang = window.currentLang || 'ko';
+        const question = lang === 'en' && todayJoke.question_en ? todayJoke.question_en : todayJoke.question;
+        const answer = lang === 'en' && todayJoke.answer_en ? todayJoke.answer_en : todayJoke.answer;
+        
         ctx.font = 'bold 56px Arial';
         const questionY = 280;
-        wrapText(ctx, `Q. ${todayJoke.question}`, 600, questionY, 1000, 60);
+        wrapText(ctx, `Q. ${question}`, 600, questionY, 1000, 60);
         
         // 정답
         ctx.font = 'bold 48px Arial';
         const answerY = 450;
-        wrapText(ctx, `A. ${todayJoke.answer}`, 600, answerY, 1000, 50);
+        wrapText(ctx, `A. ${answer}`, 600, answerY, 1000, 50);
         
         // 이미지를 Blob으로 변환
         canvas.toBlob(async (blob) => {
@@ -238,9 +255,11 @@ async function createAndShareImage() {
                 try {
                     const t = window.t || ((key, vars = {}) => key);
                     const file = new File([blob], t('shareImageFilename'), { type: 'image/png' });
+                    const lang = window.currentLang || 'ko';
+                    const question = lang === 'en' && todayJoke.question_en ? todayJoke.question_en : todayJoke.question;
                     await navigator.share({
                         title: t('shareTitle'),
-                        text: `${todayJoke.question}`,
+                        text: `${question}`,
                         files: [file]
                     });
                 } catch (error) {
